@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ECEFF1">
+
+    <ScrollView
+        android:id="@+id/main_sv1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/main_tv1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="I'm your personal NoteBook.\nPlease, keep me safe!"
+                android:textColor="#2196F3"
+                android:textStyle="bold"
+                android:background="@drawable/transparent"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"/>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/main_LL1"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/main_b1"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:text="View Notes"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ECEFF1"
+            android:background="#2196F3"
+            android:layout_marginRight="1dp"
+            android:onClick="clickedOn_main_b1_view"/>
+        <Button
+            android:id="@+id/main_b2"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:text="Add New Note"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ECEFF1"
+            android:background="#2196F3"
+            android:layout_marginLeft="1dp"
+            android:onClick="clickedOn_main_b2_add"/>
+    </LinearLayout>
+</RelativeLayout>

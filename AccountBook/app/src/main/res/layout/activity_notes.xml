@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.imti.accountbook.Notes"
+    android:background="#ECEFF1"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/notes_sv1"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:background="#FF7043">
+
+            <LinearLayout
+                android:id="@+id/notes_LL1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <EditText
+                    android:id="@+id/notes_et1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write name to search"
+                    android:textColor="#FFFFFF"
+                    android:background="@null"
+                    android:textStyle="italic"
+                    android:textColorHint="#FFFFFF"
+                    android:textAlignment="center" />
+                <Button
+                    android:id="@+id/notes_b1"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="SEARCH"
+                    android:textColor="#FF7043"
+                    android:textStyle="bold"
+                    android:background="#ECEFF1"
+                    android:textSize="17dp"
+                    android:textAlignment="center"
+                    android:onClick="clickedOn_notes_b1_search"
+                    />
+            </LinearLayout>
+
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/notes_Lv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/notes_sv1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="45dp"
+        android:paddingBottom="5dp"/>
+    <Button
+        android:id="@+id/notes_b2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Back to Home"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ECEFF1"
+        android:background="#2196F3"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="clickedOn_notes_b2_back"/>
+</RelativeLayout>
+

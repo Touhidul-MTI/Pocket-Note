@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="How to use?"
+        android:id="@+id/main_menu_help"
+        android:numericShortcut="1"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/helpicon"/>
+    <item
+        android:title="About developer"
+        android:id="@+id/main_menu_about"
+        android:numericShortcut="2" />
+    <item
+        android:title="Exit"
+        android:id="@+id/main_menu_exit"
+        android:numericShortcut="3"/>
+</menu>

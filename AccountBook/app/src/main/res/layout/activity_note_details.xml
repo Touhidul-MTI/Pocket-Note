@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.imti.accountbook.NoteDetails"
+    android:background="#ECEFF1">
+
+    <TextView
+        android:id="@+id/details_tv1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text=""
+        android:textColor="#1976D2"
+        android:background="#ECEFF1"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        />
+    <ScrollView
+        android:id="@+id/details_sv1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/details_tv1"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="45dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:id="@+id/details_tv2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Results here"
+            android:textColor="#101010"
+            android:lineSpacingExtra="7dp"
+            android:background="@drawable/transparent"
+            android:textSize="20dp"
+            />
+    </ScrollView>
+    <Button
+        android:id="@+id/details_b1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Back to Home"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ECEFF1"
+        android:background="#2196F3"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="clickedOn_details_b1_back"/>
+</RelativeLayout>
